@@ -14,7 +14,7 @@ export default function Gaatjes() {
                     worden behandeld wanneer het op tijd wordt ontdekt.
                 </p>
 
-                <Link href="/afspraken/maken" className="link-button">Maak direct uw afspraak</Link>
+                <Link href="/afspraken/maken/klacht" className="link-button">Maak direct uw afspraak</Link>
             </section>
 
             <section className="card-container">
