@@ -9,9 +9,6 @@ export default function AfspraakPlanner({ times }: { times: string[] }) {
 
     return (
         <>
-            {selectedDate && selectedTime && (
-                <p>U heeft gekozen voor {selectedDate} september om {selectedTime}.</p>
-            )}
             <section className="card-container">
                 <article className="card">
                     <h2>Kies een datum</h2>
@@ -38,6 +35,11 @@ export default function AfspraakPlanner({ times }: { times: string[] }) {
                 </article>
                 <article className="card calendar">
                     <h2>Kies een tijd</h2>
+
+                    {selectedDate && selectedTime && (
+                        <p>U heeft gekozen voor {selectedDate} september om {selectedTime}.</p>
+                    )}
+
                     <div className="time-list">
                         {times.map((time) => (
                             <button

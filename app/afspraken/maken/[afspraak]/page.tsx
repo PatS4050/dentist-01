@@ -13,11 +13,12 @@ export default async function AfspraakPage({ params }: { params: { afspraak: str
     const treatment = treatments.find((T) => T.url === afspraak);
 
     return (
-        <main>
-            <div>
+        <main classname="page-container">
+            <h1>Afspraak maken</h1>
+            <section className="intro">
                 <h2>{treatment ? treatment.name : "Onbekende behandeling"}</h2>
-                <p>U wilt een afspraak maken voor de behandeling <strong>{treatment?.name}</strong>.</p>
-            </div>
+                <p>U wilt een afspraak maken voor de behandeling <strong> {treatment?.name}</strong>.</p>
+            </section>
             <AfspraakPlanner times={beschikbareTijden} />
         </main>
     );
