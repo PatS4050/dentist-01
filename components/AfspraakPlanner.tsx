@@ -13,11 +13,6 @@ export default function AfspraakPlanner({ times }: { times: string[] }) {
                 <article className="card">
                     <h2>Kies een datum</h2>
                     <div className="calendar-grid">
-                        {/*<span>Ma</span>*/}
-                        {/*<span>Di</span>*/}
-                        {/*<span>Wo</span>*/}
-                        {/*<span>Do</span>*/}
-                        {/*<span>Vr</span>*/}
                         {days.map((day) => (
                             <span key={day}>{day}</span>
                         ))}
@@ -37,7 +32,7 @@ export default function AfspraakPlanner({ times }: { times: string[] }) {
                     <h2>Kies een tijd</h2>
 
                     {selectedDate && selectedTime && (
-                        <p>U heeft gekozen voor {selectedDate} september om {selectedTime}.</p>
+                        <p><strong>U heeft gekozen voor {selectedDate} september om {selectedTime}.</strong></p>
                     )}
 
                     <div className="time-list">
